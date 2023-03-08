@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>JS Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="heading">JavaScript Code Editor</div>
+        <p class="subhead">Where you can write and run JavaScript code</p>
+    </div>
+
+    <div id="editor">
+        <div class="container1">
+            <div id="code-title">Code</div>
+            <div><button class="code1">Code 1</button></div>
+            <div><button class="code2">Code 2</button></div>
+            <div><button class="code3">Code 3</button></div>
+            <div><button id="run">Run</button></div>
+        </div>
+        <div class="container2">
+            <div id="output-title">Output</div>
+            <button id="clr" onclick="clearBtn()">Clear</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="line-numbers"></div>
+        <textarea id="code"></textarea>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sample-code/code1.js"></script>
+    <script src="sample-code/code2.js"></script>
+    <script src="sample-code/code3.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+</body>
+
+</html>
